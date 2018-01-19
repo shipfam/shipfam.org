@@ -42,7 +42,7 @@ jobs:
           command: npm run build
       - run:
           name: Deploy Master to Firebase
-          command: ./node_modules/.bin/firebase deploy --debug --token=$FIREBASE_DEPLOY_TOKEN
+          command: ./node_modules/.bin/firebase deploy --token=$FIREBASE_DEPLOY_TOKEN
       - run:
           name: Say Destructo's name 3 times in a mirror
           command: echo sdrahciR yraG sdrahciR yraG sdrahciR yraG
