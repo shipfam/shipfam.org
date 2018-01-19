@@ -45,4 +45,4 @@ jobs:
           command: ./node_modules/.bin/firebase deploy --debug --token=$FIREBASE_DEPLOY_TOKEN
       - run:
           name: Say Destructo's name 3 times in a mirror
-          command: repeat 3 echo Gary Richards
+          command: echo sdrahciR yraG sdrahciR yraG sdrahciR yraG
