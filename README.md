@@ -1,3 +1,14 @@
+
+# Shipfam.org
+
+[![CircleCI](https://circleci.com/gh/shipfam/shipfam.org.svg?style=svg)](https://circleci.com/gh/shipfam/shipfam.org)
+
+-----
+
+Boilerplate stuff...
+
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 
 Below you will find some information on how to perform common tasks.<br>
