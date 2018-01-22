@@ -1,44 +1,27 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { Menu } from 'semantic-ui-react';
+import { css } from 'react-emotion';
 
-class Navbar extends React.Component {
-  state = {
-    activeItem: null,
-  };
+function Navbar(props) {
+  const { onItemClick, itemText } = props;
 
-  handleItemClick = (e, { name }) => this.setState({ activeItem: name });
-
-  render() {
-    const { activeItem } = this.state;
-
-    return (
-      <Menu>
-        <Menu.Item
-          name="editorials"
-          active={activeItem === 'editorials'}
-          onClick={this.handleItemClick}
-        >
-          Editorials
-        </Menu.Item>
-
-        <Menu.Item
-          name="reviews"
-          active={activeItem === 'reviews'}
-          onClick={this.handleItemClick}
-        >
-          Reviews
-        </Menu.Item>
-
-        <Menu.Item
-          name="upcomingEvents"
-          active={activeItem === 'upcomingEvents'}
-          onClick={this.handleItemClick}
-        >
-          Upcoming Events
-        </Menu.Item>
-      </Menu>
-    );
-  }
+  return (
+    <Menu className={css({ position: 'fixed', top: 0, width: '100%' })}>
+      <Menu.Item name="auth" onClick={onItemClick}>
+        {itemText}
+      </Menu.Item>
+    </Menu>
+  );
 }
+
+Navbar.propTypes = {
+  onItemClick: PropTypes.func,
+  itemText: PropTypes.string.isRequired,
+};
+
+Navbar.defaultProps = {
+  onItemClick: () => {},
+};
 
 export default Navbar;
