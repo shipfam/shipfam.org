@@ -69,4 +69,4 @@ workflows:
             - build
     filters:
       branches:
-        only: circleci-pr
+        only: master
