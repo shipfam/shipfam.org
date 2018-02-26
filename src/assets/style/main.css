@@ -1,0 +1,22 @@
+@font-face {
+  font-family: 'D-DIN';
+  src: local('D-DIN'), url(../font/d-din/D-DIN.otf) format('opentype');
+}
+
+@font-face {
+  font-family: 'D-DINCondensed';
+  src: local('D-DINCondensed'),
+    url(../font/d-din/D-DINCondensed.otf) format('opentype');
+}
+
+* {
+  font-family: 'Lato', sans-serif;
+  font-weight: 100;
+  color: white;
+}
+
+body,
+html,
+#root {
+  height: 100%;
+}

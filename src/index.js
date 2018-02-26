@@ -4,6 +4,8 @@ import ReactDOM from 'react-dom';
 import { AppContainer } from 'react-hot-loader'; // eslint-disable-line import/no-extraneous-dependencies
 
 import 'semantic-ui-css/semantic.min.css';
+import './assets/style/main.css';
+
 import App from './components/App';
 import registerServiceWorker from './registerServiceWorker';
 
